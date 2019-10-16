@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Avara';
+  src: url('./fonts/Avara-Black_web.ttf');
+}
+
+section {
+  background: linear-gradient(0.15turn, blue, white);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div {
+  font-family: 'Avara';
+}
+
+#mobile {
+  display: none;
+}
+
+#time {
+  font-size: 200px;
+  color: white;
+  padding-top: 40px;
+  z-index: 2;
+}
+
+#cheri {
+  font-size: 18px;
+  position: fixed;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+  section {
+    display: none;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    line-height: 110px;
+    font-size: 50px;
+  }
+}
